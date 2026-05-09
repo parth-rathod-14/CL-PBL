@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #111;
+    color: white;
+}
+
+/* = NAVBAR = */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav h2 {
+    color: orange;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+/* Navbar Links */
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: orange;
+    color: black;
+}
+
+nav a:active {
+    transform: scale(0.95);
+}
+
+
+
+/*  HERO SECTION  */
+
+.hero {
+    height: 90vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+    url("bg3.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 5px black;
+    margin-bottom: 25px;
+}
+
+/*  BUTTON  */
+
+.btn {
+    padding: 12px 24px;
+    background: orange;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffb733;
+    transform: scale(1.05);
+}
+
+/*  CARDS  */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 220px);
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+}
+
+.card {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card h2,
+.card h3 {
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #ddd;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px orange;
+}
+
+/* ================= ABOUT & TABLE ================= */
+
+.about,
+.table-box {
+    padding: 40px;
+    text-align: center;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+/* ================= TABLE ================= */
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table,
+tr,
+th,
+td {
+    border: 1px solid #555;
+}
+
+th {
+    background: orange;
+    color: black;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+}
+
+/* ================= REGISTER SECTION ================= */
+
+.register-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1547347298-4074fc3086f0?q=80&w=1200')
+    center/cover;
+}
+
+.register-container {
+    width: 100%;
+    max-width: 450px;
+    background: #1c1c1c;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255,165,0,0.3);
+    text-align: center;
+}
+
+.register-container h1 {
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.register-container p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+
+
+/* ================= SCHEDULE SECTION ================= */
+
+.schedule-section {
+    min-height: 100vh;
+    padding: 50px 20px;
+    background: #0b1020;
+    text-align: center;
+}
+
+.schedule-section h1 {
+    color: orange;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.table-container {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    overflow-x: auto;
+}
+
+.schedule-section table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #111827;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.schedule-section thead {
+    background: orange;
+    color: black;
+}
+
+.schedule-section th,
+.schedule-section td {
+    padding: 18px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.schedule-section th {
+    font-size: 17px;
+}
+
+.schedule-section td {
+    font-size: 15px;
+}
+
+/* Sport Tags */
+
+.sport {
+    background: #1e293b;
+    padding: 8px 14px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+/* Status */
+
+.done {
+    background: #14532d;
+    color: #4ade80;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.live {
+    background: #450a0a;
+    color: #ff4d4d;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.upcoming {
+    background: #1e3a8a;
+    color: #60a5fa;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+/* ================= FORM ================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input,
+select,
+button {
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* Input Fields */
+
+input,
+select {
+    background: #f1f1f1;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border: 2px solid orange;
+}
+
+/* ================= TEAM SECTION ================= */
+
+.team-members {
+    display: none;
+}
+
+/* ================= BUTTONS ================= */
+
+button {
+    background: orange;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ffb733;
+}
+
+/* ================= LOGIN BOX ================= */
+
+.login-box {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+.login-box h2 {
+    color: orange;
+    margin-bottom: 10px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    margin-top: 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .register-container {
+        padding: 20px;
+    }
+}
